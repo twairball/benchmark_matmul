@@ -25,6 +25,8 @@ $ python test_np.py
 |----------|-----------|
 | Swift Tensorflow | 0.010903 |
 | Python Numpy | 0.088222 |
+| PyTorch | 0.289921 | 
+| Python Tensorflow | 1.462944 | 
 
 ##### Notes:
 - Mac OSX / XCode 10

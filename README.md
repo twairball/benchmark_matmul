@@ -2,13 +2,6 @@
 
 Compares `matmul` speeds between `Swift for Tensorflow` vs `Numpy`. 
 
-## Requirements
-
-`python v3.6.6`
-`numpy==1.15.1`
-`Swift 5.0-dev`
-`Swift for Tensorflow v0.2 (March 1, 2019 snapshot)`
-
 ## Usage
 
 ````
@@ -21,16 +14,19 @@ $ python test_np.py
 
 ## Results
 
-| Platform | mean (ms) | 
-|----------|-----------|
-| Swift Tensorflow | 0.010903 |
-| Python Numpy | 0.088222 |
-| PyTorch | 0.289921 | 
-| Python Tensorflow | 1.462944 | 
+|  Lang  |  Platform  |  Ver   | Proc | mean (ms) | 
+|--------|------------|--------|------|---------|
+| Swift  | Tensorflow | v0.2   | CPU  |  8.4260 |
+| Python | Numpy      | v1.151 | CPU  | 17.3245 |
+| Python | PyTorch    | v0.4.1 | CPU  |  7.1645 | 
+| Python | Tensorflow | v1.9.0 | CPU  |  7.2635 | 
 
 ##### Notes:
 - Mac OSX / XCode 10
-- CPU only
+- python==v3.6.6
+- swift==5.0-dev
+- swift-tensorflow prebuilt from Mar-1, 2019 snapshot
+- python-tensorflow run in eager-mode
 
 ## LICENSE
 
